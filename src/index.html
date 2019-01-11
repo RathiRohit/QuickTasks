@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/pretty-checkbox.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/simplebar.css" />
+        <link rel="stylesheet" type="text/css" href="css/clippy.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    </head>
+    <body>
+        <div id="outerPopup">
+            <div id="popup" data-simplebar data-simplebar-auto-hide="false">
+                <center><input placeholder="Add new task" type="text" id="add-new-task"/></center>
+                <ul id="taskList"></ul>
+                <hr/>
+                <details id="completedTasks">
+                    <summary style="outline:none;">Completed tasks</summary>
+                    <ul id="completedTaskList"></ul>
+                </details>
+            </div>
+            <div id="popupPointer"></div>
+        </div>
+
+        <script>if(typeof module === 'object') {window.module = module; module = undefined;}</script>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/Sortable.min.js"></script>
+            <script type="text/javascript" src="js/simplebar.js"></script>
+            <script type="text/javascript" src="js/clippy.js"></script>
+            <script type="text/javascript" src="js/custom.js"></script>
+        <script>if(window.module) module = window.module;</script>
+    </body>
+</html>

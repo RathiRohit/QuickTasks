@@ -1,0 +1,106 @@
+body {
+    background-color: rgba(0,0,0,0);
+    position: relative;
+}
+
+#outerPopup {
+    padding: 0;
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    overflow-x: visible;
+}
+
+#popup {
+    width: 70vw;
+    height: 80vh;
+    background-color: lightgray;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#popupPointer {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid lightgray;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 15px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#completedTaskList {
+    list-style-type: none;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+#completedTasks {
+    padding: 15px;
+    padding-top: 5px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.custom-input {
+    background-color: lightgray;
+    color: black;
+    outline: none;
+    border: none;
+    width: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 30px;
+}
+.custom-input:focus {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#completedTaskList .custom-input {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#add-new-task {
+    background-color: lightgray;
+    color: black;
+    outline: none;
+    border: none;
+    width: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 30px;
+    border-bottom: 1px dashed gray;
+}
+
+.custom-checkbox {
+    margin-right: 5px;
+    width: 10%;
+}
+
+.grabber {
+    cursor: grab;
+    color: gray;
+}
+
+.task {
+    margin-bottom: 10px;
+}
